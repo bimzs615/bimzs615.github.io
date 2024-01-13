@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Manajemen Gudang Jagung</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manajemen Gudang Jagung</h1>
+    </header>
+
+    <section id="stock-management">
+      <!-- Form untuk masuk/keluar stok -->
+      <form id="stock-form">
+        <label for="quantity">Jumlah:</label>
+        <input type="number" id="quantity" name="quantity" required />
+
+        <label for="movement">Jenis Pergerakan:</label>
+        <select id="movement" name="movement" required>
+          <option value="in">Masuk</option>
+          <option value="out">Keluar</option>
+        </select>
+
+        <button type="button" onclick="manageStock()">Kelola Stok</button>
+      </form>
+
+      <!-- Tabel untuk menampilkan stok -->
+      <table id="stock-table">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Jumlah</th>
+            <th>Pergerakan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data stok akan ditampilkan di sini -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Manajemen Gudang Jagung</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
